@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SmartTask</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- Create Account-->
+</resources>

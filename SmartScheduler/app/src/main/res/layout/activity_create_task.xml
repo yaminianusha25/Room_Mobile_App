@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dips.smartscheduler.CreateTask"
+    android:background="@drawable/bg4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_regular_padding"
+        android:paddingRight="@dimen/activity_regular_padding"
+        android:paddingLeft="@dimen/activity_regular_padding">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backGroundColor"
+            android:padding="@dimen/activity_regular_padding">
+
+           <TextView
+               android:textSize="@dimen/regular_font_size"
+               android:textColor="@color/colorText"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Title" />
+
+           <EditText
+               android:textSize="@dimen/regular_font_size"
+               android:textColor="@color/colorText"
+               android:singleLine="true"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/createTaskName" />
+
+           <TextView
+               android:textSize="@dimen/regular_font_size"
+               android:textColor="@color/colorText"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Description" />
+
+           <EditText
+               android:textSize="@dimen/regular_font_size"
+               android:textColor="@color/colorText"
+               android:singleLine="true"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/createTaskDesc" />
+
+            <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <Button
+                   android:textSize="@dimen/regular_font_size"
+                   android:textColor="@color/colorText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Add People"
+                   android:onClick="AddPeople"/>
+
+
+               <Spinner
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/spinnerCreateTask"
+                   android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Text Message"
+                android:id="@+id/switch1"
+                android:checked="false" />
+
+            <ScrollView
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/peopleLayout">
+                </LinearLayout>
+
+           </ScrollView>
+
+           <ScrollView
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:textSize="@dimen/regular_font_size"
+                       android:textColor="@color/colorText"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Complete By " />
+
+                   <TextView
+                       android:textSize="@dimen/regular_font_size"
+                       android:textColor="@color/colorlink"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/createTaskDate"
+                       android:text="Select Date"
+                       android:onClick="GetDate"/>
+
+               </LinearLayout>
+
+           </ScrollView>
+
+           <HorizontalScrollView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/createTaskImageLayout">
+
+                   <ImageView
+                       android:layout_width="500px"
+                       android:layout_height="500px"
+                       android:onClick="UploadImage"
+                       android:id="@+id/uploadPicture"
+                       android:padding="10px"
+                       android:src="@drawable/upload" />
+
+               </LinearLayout>
+           </HorizontalScrollView>
+
+           <Button
+               android:textSize="@dimen/regular_font_size"
+               android:textColor="@color/colorText"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="Create Task"
+               android:onClick="CreateTask"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

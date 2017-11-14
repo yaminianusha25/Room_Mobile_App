@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dips.smartscheduler.CreateAccount"
+    android:background="@drawable/bg3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_regular_padding"
+        android:paddingRight="@dimen/activity_regular_padding"
+        android:paddingLeft="@dimen/activity_regular_padding">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backGroundColor"
+            android:padding="@dimen/activity_regular_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textSize="@dimen/title_font_size"
+                android:textColor="@color/colorText"
+                android:textAlignment="center"
+                android:paddingBottom="@dimen/activity_regular_padding" />
+
+            <TextView
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number *" />
+
+            <EditText
+                android:inputType="number"
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneText" />
+
+            <TextView
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name *" />
+
+            <EditText
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fNameText"
+                android:singleLine="true" />
+
+            <TextView
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name" />
+
+            <EditText
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lNameText"
+                android:singleLine="true" />
+
+            <TextView
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password *" />
+
+            <EditText
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/passText"
+                android:singleLine="true" />
+
+            <TextView
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password *" />
+
+            <EditText
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/passConText"
+                android:singleLine="true" />
+
+            <TextView
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"/>
+
+            <EditText
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailText"
+                android:singleLine="true" />
+
+            <Button
+                android:textSize="@dimen/regular_font_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="@color/colorText"
+                android:onClick="CreateAccount"  />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

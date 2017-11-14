@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dips.smartscheduler.CreateGroup">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Create Group"
+                android:id="@+id/txtCreateGroup"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group Name :"
+                android:id="@+id/txtViewGroupName"
+                android:layout_alignBaseline="@+id/edtTextGroupName"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtTextGroupName"
+                android:layout_below="@+id/txtCreateGroup"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/txtViewGroupName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group Description :"
+                android:id="@+id/txtViewGroupDesc"
+                android:layout_below="@+id/edtTextGroupName"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtTextGroupDesc"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtViewGroupDesc"
+                android:layout_alignEnd="@+id/edtTextGroupName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View :"
+                android:id="@+id/txtViewView"
+                android:layout_below="@+id/edtTextGroupDesc"
+                android:layout_alignParentStart="true" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dropDownViewName"
+                android:spinnerMode="dropdown"
+                android:layout_below="@+id/txtViewView"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post :"
+                android:id="@+id/txtViewPost"
+                android:layout_below="@+id/dropDownViewName"
+                android:layout_alignParentStart="true" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dropDownPostName"
+                android:spinnerMode="dropdown"
+                android:layout_below="@+id/txtViewPost"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Group"
+                android:id="@+id/btnCreateGroup"
+                android:layout_below="@+id/dropDownPostName"
+                android:layout_alignParentStart="true"
+                android:onClick="CreateGroup"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

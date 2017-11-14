@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGroundColor"
+    tools:context="com.example.dips.smartscheduler.CompleteTaskList">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="NO TASK FOUND"
+            android:id="@+id/txtViewCmpltTaskData"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/regular_font_size"
+            android:visibility="invisible"
+            android:background="#e98787"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewCmpltTaskList"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.41"
+            android:layout_below="@+id/txtViewCmpltTaskData" />
+
+</RelativeLayout>

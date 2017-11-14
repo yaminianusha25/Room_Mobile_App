@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dips.smartscheduler.CreateAccount"
+    android:background="@drawable/bg2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_regular_padding"
+        android:paddingRight="@dimen/activity_regular_padding"
+        android:paddingLeft="@dimen/activity_regular_padding">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backGroundColor"
+            android:padding="@dimen/activity_regular_padding">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_font_size"
+                android:textColor="@color/colorText"
+                android:text="Title"
+                android:id="@+id/completeTaskTitle"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:text="Description"
+                android:id="@+id/completeTaskDesc"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_regular_padding">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textSize="@dimen/regular_font_size"
+                        android:textColor="@color/colorText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Due Date"
+                        android:layout_margin="2dp" />
+
+                    <TextView
+                        android:textSize="@dimen/regular_font_size"
+                        android:textColor="@color/colorText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Finish Date"
+                        android:layout_margin="2dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textSize="@dimen/regular_font_size"
+                        android:textColor="@color/colorText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03/04/2016"
+                        android:id="@+id/completeTaskDue"
+                        android:layout_margin="2dp" />
+
+                    <TextView
+                        android:textSize="@dimen/regular_font_size"
+                        android:textColor="@color/colorText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03/06/2016"
+                        android:id="@+id/completeTaskFinish"
+                        android:layout_margin="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments" />
+
+            <EditText
+                android:textSize="@dimen/regular_font_size"
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/completeTaskComments" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/completeTaskImageLayout">
+
+                    <ImageView
+                        android:layout_width="500px"
+                        android:layout_height="500px"
+                        android:onClick="UploadImage"
+                        android:id="@+id/uploadPicture"
+                        android:padding="10px"
+                        android:src="@drawable/upload" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:textSize="@dimen/regular_font_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finish Task"
+                android:textColor="@color/colorText"
+                android:onClick="CompleteTest" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
